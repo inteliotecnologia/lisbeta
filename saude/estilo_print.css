@@ -1,0 +1,599 @@
+
+body * {
+	margin: 0;
+	padding: 0;
+}
+
+/* ---------- TAGS GERAIS ----------------------------------- */
+
+body {
+	font: normal 70% Verdana, Tahoma, Arial;
+}
+
+h1, h2, h3 {
+	text-align: left;
+	text-indent: 10px;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font: bold 120% "Trebuchet MS";
+	text-align: center;
+}
+
+.parte_direita h2 {
+	font: normal 120% "Trebuchet MS";
+}
+
+.titulos, .titulos_mais {
+	position: absolute;
+	width: 55%;
+	text-align: right;
+	top: -35px;
+	right: 0;
+}
+.titulos_mais {
+	font-size: 150%;
+}
+.titulos2 {
+	position: relative;
+	text-align: left;
+}
+
+h3 {
+	font: bold 140% "Trebuchet MS";
+}
+
+input, textarea, select {
+	font: normal 100% Verdana, Tahoma, Arial;
+	border: 1px solid #ccc;
+	background: #fff;
+	color: #666;
+	margin-right: 10px;
+	width: 140px;
+	padding: 2px;
+}
+input:focus, textarea:focus, select:focus {
+	border: 1px solid #000;
+	color: #000;
+}
+input:disabled, button:disabled, .tamanho_ajuste {
+	background: #fff;
+	border: 0;
+	color: #333;
+	width: 30px;
+	text-align:center;
+}
+
+label, input, textarea, select {
+	position: relative;
+	display: block;
+	float: left;
+	margin-bottom: 4px;
+}
+label {
+	font: bold 110% "Trebuchet MS";
+	margin-right: 10px;
+	width: 120px;
+	text-align: right;
+}
+select {
+	width: 155px;
+}
+
+option {
+	padding: 2px 2px 2px 6px;
+}
+
+textarea {
+	height: 40px;
+}
+table {
+	width: 100%;
+	float: none !important;
+}
+th {
+	font: bold 120% "Trebuchet MS", Verdana, Arial;
+}
+th, td {
+	border-bottom: 1px solid #000;
+	padding: 3px 1px;
+	float: none !important;
+}
+tr:hover {
+	background:#ccc;
+}
+
+.checkbox1 {
+	width: 20px;
+	border: 0;
+}
+.checkbox2 {
+	width: 20px;
+	margin-left: 84px !important;
+	margin-left: 47px;
+	border: 0;
+}
+br {
+	clear: both;
+}
+fieldset {
+	position: relative;
+	padding: 20px 15px;
+	margin: 4px 0;
+	border: 1px solid #666;
+}
+
+legend {
+	font: bold 120% "Trebuchet MS";
+	padding: 0 4px;
+	color: #000;
+	background: #fff;
+}
+
+button {
+	display: none;
+}
+
+button:hover {
+	color: #fc0;
+}
+img {
+	border: 0;
+}
+
+address.sistema {
+	display: none;
+}
+address.relatorio {
+	font: normal 10px Verdana, Tahoma, Arial;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	color: #000;
+}
+
+#assinatura {
+	position: absolute;
+	width: 60%;
+	bottom: 0;
+	right: 20px;
+	border-top: solid 1px #000;
+	padding-top: 5px;
+	text-align: center;
+}
+
+/* ---------- DIVS DE POSIONAMENTO + UNICOS GERAIS ----------------------------------- */
+
+#corpo {
+	position: relative;
+	width: 99%;
+}
+
+#topo {
+	position: relative;
+	height: 96px;
+	z-index: 3;
+/*	display:none;*/
+}
+
+#logo_lisbeta {
+	position: relative;
+	height:90px;
+	width:174px;
+	display: block;
+}
+
+#logo_cidade {
+	position: absolute;
+	left: 190px;
+	width: 120px;
+	height: 200px;
+}
+#cabecalho_impressao {
+	position: absolute;
+	right: 0;
+}
+#cabecalho_impressao h2 {
+	text-align: right;
+	line-height: 80%;
+}
+#infos, #sair, #alerta_vencimentos, #emula_posto, #temp, #menu, #submenu, #tela_senha {
+	display:none;
+}
+
+#conteudo {
+	position: relative;
+	padding: 0 5px;
+}
+#botao_voltar {
+	display: none;
+}
+#rodape {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	bottom: -30px;
+}
+
+#pesquisa_remedio_atualiza, #pesquisa_consulta_atualiza {
+	position: relative;
+	border: 1px solid #ccc;
+	height: 150px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+#pesquisa_consulta_atualiza {
+	height: 160px;
+}
+#pesquisa_remedio_atualiza ul, #pesquisa_consulta_atualiza ul {
+	list-style: none;
+}
+#pesquisa_remedio_atualiza ul li, #pesquisa_consulta_atualiza ul li {
+	font-family: "Trebuchet MS";
+
+}
+#pesquisa_remedio_atualiza ul li a, #pesquisa_consulta_atualiza ul li a {
+	display: block;
+	height: 22px;
+	text-indent: 10px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 4px;
+}
+#pesquisa_remedio_atualiza ul li a:hover, #pesquisa_consulta_atualiza ul li a:hover {
+	background:#CCC;
+	color:#030;
+	border-bottom:solid 1px #003300;
+}
+#receita_remedio {
+	position: absolute;
+	padding: 5px;
+	display: none;
+	top: 20px;
+	left: 100px;
+	width: 270px;
+	min-height: 260px;
+	height: auto !important;
+	height: 260px;
+	background: #D4EBB3;
+	border: 1px solid #333;
+	z-index: 11;
+}
+#receita_remedio input.tamanho20 {
+	margin-right: 0px;
+}
+#relatorio_consulta {
+	width: 100%;
+	height: auto;
+	z-index: 20;
+}
+
+#legenda_dist {
+	position: absolute;
+	top: -12px;
+	right: 18px;
+	width: auto;
+}
+
+#legenda_dist ul {
+	list-style: none;
+}
+
+#legenda_dist ul li {
+	text-indent: 20px;
+	height: 20px;
+}
+.legenda_verde {
+	background: url(images/legenda_verde.gif) no-repeat;
+}
+.legenda_amarelo {
+	background: url(images/legenda_amarelo.gif) no-repeat;
+}
+.legenda_vermelho {
+	background: url(images/legenda_vermelho.gif) no-repeat;
+}
+
+
+/* ---------- DIVS PAGINAS INTERNAS ------------------------------------------------------------- */
+
+#tela_mensagens, #tela_mensagens2 {
+	display: none;
+}
+.atencao {
+	width: 100%;
+	height: 100%;
+	padding: 3px;
+	background: #fcd536;
+	color: #000;
+	font: bold 120% "Trebuchet MS";
+}
+
+#prontuario_atualiza {
+	position: relative;
+	top: -10px;
+	right: 20px;
+	width: 460px;
+	padding: 10px;
+	min-height: 200px;
+	height: auto !important;
+	height: 200px;
+}
+
+#tela_cadastro, #tela_aux_rapida {
+	display: none;
+}
+
+#tela_relatorio {
+
+}
+#paginacao {
+	display: none;
+}
+
+#busca {
+	display:none;
+}
+#rel_acoes {
+	display: none;
+}
+#busca.maior {
+	width: 520px;
+}
+#busca label {
+	padding-top: 5px;
+}
+#busca input {
+	padding: 5px;
+}
+#direita_listar {
+	position: absolute;
+	width: 280px;
+	height: 300px;
+	top: 40px;
+	right: 5px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background: #3c3;
+}
+/* ---------- CLASSES DIVERSAS ------------------------------------------------------------------- */
+
+.tamanho20 {
+	width: 20px;
+}
+.tamanho20_e {
+	width: 20px;
+	text-align: left;
+}
+
+.tamanho30 {
+	width: 30px;
+}
+.tamanho30_e {
+	width: 30px;
+	text-align: left;
+}
+.tamanho50 {
+	width: 50px;
+}
+.tamanho50_e {
+	width: 50px;
+	text-align: left;
+}
+
+.tamanho80 {
+	width: 80px;
+}
+
+.tamanho100 {
+	width: 100px;
+}
+.tamanho120 {
+	width: 120px;
+}
+
+.escondido {
+	display:none;
+}
+.vermelho {
+	color: #900;
+}
+.verde {
+	color: #390;
+}
+.azul {
+	color: #06c;
+}
+.fechar {
+	display:none;
+}
+.fechar:link {
+	color: #fff;
+}
+.fechar:hover {
+	background: #FF3300;
+	padding: 1px 7px 3px 7px;
+	color: #fff;
+}
+.parte50, .parte50_lista {
+	position: relative;
+	width: 48%;
+	float: left;
+	margin: 0 1%;
+}
+.parte50_receita {
+	position: relative;
+	width: 49%;
+	float: left;
+	border-bottom: 1px solid #333;
+	margin-bottom: 4px;
+}
+.fundo_branco {
+	background: #fff;
+	padding: 4px;
+}
+.parte_total {
+	position: relative;
+	padding: 5px 10px 20px 5px;
+	margin-bottom: 40px;
+}
+.parte_esquerda, .parte_direita, .parte_direita2, .parte_esquerda_i, .parte_direita_i {
+	position: relative;
+	padding: 5px 10px 20px 5px;
+	float: none !important;
+}
+.parte_esquerda, .parte_esquerda_i {
+	width: 100%;
+	margin-bottom: 40px;
+	float: none !important;
+}
+.parte_direita, .parte_direita2, .parte_direita_i {
+	
+}
+.parte_direita2 {
+	margin-top: 25px;
+	display: none;
+}
+.parte_esquerda_i {
+	width: 270px;
+	display:none;
+}
+.parte_direita_i {
+	width: 450px;
+	display:none;
+}
+.parte_direita, .parte_direita2 {
+
+}
+
+.link_editar, .link_excluir, .link_trocar {
+	display: none;
+	width: 16px;
+	height: 16px;
+	text-indent: -5000px;
+	float: left;
+}
+.centro {
+	text-align: center
+}
+.recuo1 {
+	margin: 5px 0 10px 30px;
+}
+.recuo1 li {
+	margin: 6px 0;
+}
+.recuo2 {
+	margin: 5px 0 10px 15px;
+}
+.abrange {
+	width: 40%;
+	font-weight: normal;
+	text-align:left;
+}
+.altura50 {
+	height: 60px;
+}
+.div_receita_ok {
+	position: relative;
+	padding: 5px;
+	margin-bottom: 2px;
+	border:solid 1px #d5ebb4;
+}
+.flutuar_esquerda {
+	float: left;
+}
+.tamanhoAuto {
+	width: auto;
+}
+.verde_transp {
+	background: url(images/verde_transp.png);
+}
+.amarelo_transp {
+	background: url(images/amarelo_transp.png);
+}
+
+.vermelho_transp {
+	background: url(images/vermelho_transp.png);
+}
+
+.quebra_linha {
+	float: none !important;
+}
+
+.titulo_rel {
+	text-align:center;
+	font-size:16px;
+	margin-top: 30px;
+}
+
+p {
+	margin: 2px 0 8px 0;
+	text-indent: 40px;
+}
+.com_label_grande label {
+	width: 100px;
+}
+
+/* ================== objetos nao impressos ===========================*/
+
+.mov_ver, .mov_ver:hover {
+	position:absolute;
+	left: -9000px;
+	display:none;
+}
+
+#formMovBuscar {
+	display:none;
+}
+
+#conteudo a.cima_direita {
+	display:none;
+}
+
+#formMMovBuscar {
+	display:none;
+}
+
+#formTfdInserir .parte_esquerda, #formTfdInserir .parte_direita  {
+	margin: 0;
+	padding: 0;
+}
+#link_aux {
+	display: none;
+}
+.menor {
+	font-size: 80%;
+}
+.screen {
+	display: none;
+}
+.partei {
+	position: relative;
+	width: 47%;
+	margin-right: 2%;
+	float: left;
+}
+.link_folder {
+	display: none;
+}
+.tamanho45 {
+	width: 45px;
+}
+input:disabled, .tamanho_ajuste {
+	width: 100%;
+}
+.alinhar_centro {
+	text-align: center;
+}
+.alinhar_direita {
+	text-align: right;
+}
+.texto_centralizado_meio {
+	position: relative;
+	width: 80%;
+	margin: 0 0 0 8%;
+	line-height: 180%;
+}

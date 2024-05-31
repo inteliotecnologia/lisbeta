@@ -1,0 +1,59 @@
+
+SELECT *
+FROM familias_pessoas
+WHERE id_pessoa = '192'
+OR id_pessoa = '2586'
+
+
+SELECT *
+FROM almoxarifado_mov
+WHERE id_receptor = '192'
+OR id_receptor = '2586'
+
+
+
+1879  	1878  	8464  	ADELINUS KNORST
+2465  	2444  	8464  	ADELINUS KNORST
+2404  	1649  	8464  	ADENIR VIEIRA DE FREITAS
+2295  	2293  	8464  	ADRIANA ELIZEU DEMETRIO NURNBERG
+1918  	1461  	8464  	ALEXANDRE BATISTA
+2274  	1350  	8464  	ANTONIO JO√O DA SILVA
+1462  	0  	8464  	DARCI DA SILVA
+1511  	834  	8464  	DIEGO ESPINDOLA JACINTO
+2215  	1494  	8464  	DIONISIO DE OLIVEIRA
+1415  	529  	8464  	EMA CACHOEIRA  	
+1847  	0  	8464  	FERNANDO CUSTODIO ZAPELINI
+1827  	227  	8464  	ISOLETE MATTEI FERREIRA
+1825  	227  	8464  	NEVIO SCHLICKMANN
+1826  	227  	8464  	OT·VIO SCHLICKMANN
+2294  	2293  	8464  	OTO NURNBERG
+1875  	1874  	8464  	PL¡CIDO TORRES DOS SANTOS
+2278  	187  	8464  	VANDERSON BIANCO WESSLER
+2586  	2584  	8464  	VILMAR SCHLICKMAN
+2582  	2581  	8464  	MARIA GORETI TOMAZ DA LUZ
+2218  	2217  	8464  	CLAUDINEIA CAETANO
+2497  	1054  	8464  	ANA DE MORAES SILVA
+2610  	218  	8464  	HILDA CUSTÛDIO MENDES
+2338  	1075  	8464  	DJALMA DUTRA
+
+x205/239 priscila
+x1872 rosinete venancio
+x2435 rubens olavo henrique
+x1474 sebastiao antunes moreira
+x920 terezina martins custorio soratto
+x1934 vilson wessler
+xger
+x2672 natalia hilario
+x2061 maria zeufira
+x2608 stevao atan·sio mendes
+x2678 eugenia luciano damazio
+x2338 djalma dutra
+x2033 irenio/irinio
+x2541 jose augusto
+
+
+------------- para excluir
+
+?861/758 margarete martins
+?2661 mario
+?2297 oto

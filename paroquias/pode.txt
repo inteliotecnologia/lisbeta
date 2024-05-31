@@ -1,0 +1,78 @@
+r- atendimento
+	- agendar consultas;
+	- fila de espera, pré-atendimento;
+
+c- médico
+	- fazer a consulta;
+	- receitar remédios e exames;
+
+e- enfermeiro chefe
+	- consulta de enfermagem;
+	- soap;
+
+f- farmacia
+	- entrada, saída, movimentação e distribuição de medicamentos;
+
+o- odontologia
+	- consulta odontológica;
+	- odontogramas;
+
+x- almoxarifado de materiais
+	- entrada, saída, movimentação e distribuição de materiais;
+
+p- producao
+	- digitação/geração dos relatórios;
+
+d- procedimentos
+	- cadastro de procedimentos;
+
+n- auxiliar de odontologia
+	- consulta odontológica no sistema (em nome de um dentista que possui CRO)
+
+i- auxiliar de medico
+	- consulta médica no sistema (em nome de um medico que possui CRM)
+
+m- auxiliar de enfermagem
+	- consulta de enfermagem no sistema (em nome de um dentista que possui COREM)
+
+s- secretário
+	- dá uma visão geral do sistema, retirando as opções de cadastro/edição/exclusão;
+	- somente relatórios e dados informativos;
+
+t- tfd
+	- controle de transporte fora de domicílio;
+	- agendamento e programação de viagens;
+
+l- social
+	- acesso ao módulo social do município;
+
+z- famílias
+	- inserir membros e tal
+
+------------------------------------------
+
+v- vacina
+	- acesso ao módulo de vacina;
+
+
+! - remedios
+@ - exames
+
+
+$permissao = ".". $_POST["atendimento"] . $_POST["enfermeiro"] . $_POST["auxiliar_enfermagem"] . $_POST["consultar"] . $_POST["auxiliar_medico"] . $_POST["procedimentos"] . $_POST["odontologia"] . $_POST["auxiliar_odontologia"] . $_POST["farmacia"] . $_POST["almoxarifado"] . $_POST["producao"] . $_POST["vacina"] .".";
+
+
+
+
+
+@logs($rs->id_usuario, $_SESSION["id_cidade_sessao"], $_SESSION["id_posto_sessao"], "marca consulta, ID ". mysql_insert_id(), $_SERVER["REMOTE_ADDR"].":".$_SERVER["REMOTE_PORT"], gethostbyaddr($_SERVER["REMOTE_ADDR"]).":".$_SERVER["REMOTE_PORT"]);
+
+
+if ($result) {
+			$msg= 0;
+			@logs($rs->id_usuario, $_SESSION["id_cidade_sessao"], $_SESSION["id_posto_sessao"], "insere remédio, ID ". mysql_insert_id(), $_SERVER["REMOTE_ADDR"].":".$_SERVER["REMOTE_PORT"], gethostbyaddr($_SERVER["REMOTE_ADDR"]).":".$_SERVER["REMOTE_PORT"]);
+		}
+		else {
+			$msg= 1;
+			@logs($rs->id_usuario, $_SESSION["id_cidade_sessao"], $_SESSION["id_posto_sessao"], "falha ao inserir remédio", $_SERVER["REMOTE_ADDR"].":".$_SERVER["REMOTE_PORT"], gethostbyaddr($_SERVER["REMOTE_ADDR"]).":".$_SERVER["REMOTE_PORT"]);
+		}

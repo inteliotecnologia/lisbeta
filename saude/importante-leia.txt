@@ -1,0 +1,81 @@
+---------------------------------------------------
+IMPORTANTE: esta mensagem contém muitas informações 
+úteis, guarde-a para referência futura.
+---------------------------------------------------
+
+Caro cliente,
+
+Obrigado por escolher nossos serviços para 
+Hosting de suas páginas Web. 
+
+
+A atualização/publicação do site deve ser feita 
+via FTP e a responsabilidade por manter sua senha em lugar
+seguro e de entregá-la a terceiros é sua, portanto 
+cuide bem dela.
+
+
+Todas as questões relativas ao funcionamento, 
+instalação e configuração de acesso FTP estão disponíveis 
+na seguinte página:
+http://usuarios.matrix.com.br
+
+
+Contas de e-mail adicionais e problemas com e-mail em geral 
+devem ser vistos diretamente com o suporte, pelo telefone  
+0800 48 1155 ou pelo e-mail suporte@matrix.com.br
+
+
+Quando for necessária a troca de senha de FTP é 
+obrigatório o envio do formulário para que a alteração
+seja efetuada.
+http://usuarios.matrix.com.br/webmasters/troca_senha_FTP.cgi
+
+
+Se por algum motivo você perder os dados de conexão
+(informações de host, login e senha), preencha o formulários
+do link abaixo que eles serão reenviados a você.
+http://usuarios.matrix.com.br/webmasters/reenvio_dados_FTP.cgi
+
+
+Caso você queira executar scripts em sua página, dirija-se a
+http://usuarios.matrix.com.br/duvidas/executando_scripts.html
+para maiores informações.
+
+* Já deve existir a pasta cgi-bin criada e com permissão 755. 
+  Caso ela não exista ou tenha sido excluida, basta criá-la 
+  novamente e arrumar a permissão. 
+  (Vide http://usuarios.matrix.com.br na parte de duvidas, 
+   a seção que fala sobre execução de scripts)
+
+
+Foi adicionado também em seu diretório um arquivo "index.html", 
+com o aviso de implantação do site. Não se esqueça de remover 
+este arquivo do servidor antes de começar a transferência de 
+arquivos para fazer a PUBLICAÇÃO inicial do site.
+
+
+As estatísticas de acesso ao seu site estarão disponíveis
+a partir das 0:00Hs do dia seguinte da publicação do site  
+no seguinte endereço:
+http://www.seudominio.com.br/webalizer
+
+
+Observações: 
+  --- Não esqueça que a página inicial do seu site deve ser "index.html"
+      e deve ser em letras minúsculas.
+  --- Ao fazer a atualização do site, não se esqueça de esvaziar 
+      o cache do browser, porque senão a página mostrada será a antiga.
+
+
+Atenciosamente,
+Webmaster - Matrix Internet S.A 
+
+
+
+pop.matrix.com.br
+smtp.matrix.com.br
+
+lisbeta
+14li1839
+

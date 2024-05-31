@@ -1,0 +1,10 @@
+situacoes da solicitacao
+
+0- aguardando
+1- na regional
+2- voltou da regional e foi aceito
+3- voltou da regional e foi negado
+4- aceito pela prefeitura
+5- ja viajou
+
+17-SIT67-00001-0096761573
